@@ -1,0 +1,15 @@
+lab 1
+create an index page for your people account
+it must be named index.html
+it must contain at least the following:
+
+- a heading tag containing your name
+- a paragraph about yourself
+- emphasize and strong some of the words as appropriate
+- an unordered list of your classes (with links to their pages if they have them)
+- an ordered list of at least 4 things from your five year plan
+- an image of you with your row
+- a link to your 231 folder
+
+This is not the order that things need to appear in your page, but all of the things do need to appear in your page at some point.
+When looking at the source in firefox, no unclosed tags should appear red, and there should be proper indentation with nested elements.
