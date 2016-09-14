@@ -1,0 +1,13 @@
+lab 2
+extend your people.emich.edu homepage by convert the list of courses into a table.
+your table should have at least the following:
+
+- name of class
+- course number
+- days meeting (one char for day)
+- time start
+- time finish
+- teacher name
+- room number
+
+Make sure that the links that you had to your classes still exist
