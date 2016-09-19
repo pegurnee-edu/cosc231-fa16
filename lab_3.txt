@@ -1,0 +1,11 @@
+Lab 3
+extend your people.emich.edu homepage by adding some style.
+
+your page must include an external css page that applies some version of the following style:
+
+- background to the entire page
+- a new font style for your entire page
+- font that is 10% larger for <strong> tags, and a different font color for <em> tags
+- alternating colors in the backgrounds of your tables
+
+you must also create a "Contact the Webmaster" page using form elements. Provide a link at the bottom of your page to the contact page. The contact page should allow for submission of comments, along with an associated e-mail and name.
