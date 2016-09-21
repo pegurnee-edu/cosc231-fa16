@@ -1,0 +1,22 @@
+Lab 4
+take one of the following webpages:
+
+http://www.emunix.emich.edu/~evett/
+http://www.emunix.emich.edu/~sverdlik/
+http://www.emunix.emich.edu/~haynes/311/fa16
+
+and bring it up to the standards that we expect from a webpage:
+
+- html5 valid (by using https://validator.w3.org/)
+- css3 valid (http://jigsaw.w3.org/css-validator/)
+- no erroneous red html tags or entities in firefox view source
+- no inline css
+- good alignment of html and css
+
+after the standards are met, without removing content, make the site look 'nice':
+
+- get good looking fonts
+- use color effectively (background and font color)
+- structure content in a way that is accessible for the users of the site (which are both the professor and student)
+
+This assignment is may be difficult for many because of the trouble with defining 'nice' looking, hopefully we've all seen enough bad websites to know one when we see one; we're trying to add style to a site to create a visually appealing website.
