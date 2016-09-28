@@ -1,0 +1,8 @@
+lab 5
+use javascript to create a grid determined by specifications given by the user. Use two textboxes ask for the user's desired width and height in number of squares. Give the user a button to confirm.
+
+- two text boxes
+- one button (onclick draws the grid)
+- create grid by appending new children
+- grid can either be a table or collection of divs
+- clicking on the button a second time should clear the previous board, and draw a new one, with colors randomly assigned 
