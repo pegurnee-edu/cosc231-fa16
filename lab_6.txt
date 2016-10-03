@@ -1,0 +1,3 @@
+lab 6
+Add a form to your home page that allows a user to enter their preferred background color, font color, and font size and set your page to those values.
+Through use of Cookies or LocalStorage, store that data and load those values as presets when the user loads the page.
