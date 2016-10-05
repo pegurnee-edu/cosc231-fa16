@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>october 5th</title>
+    <style>
+      id {
+        height: 50px;
+        width: 20%;
+      }
+    </style>
+    <script type="text/javascript">
+      function testInput() {
+        var regexType = document.querySelector('input[name="regSelect"]:checked').value,
+            inputText = document.getElementById('theCheckedText').value;
+
+        var output;
+
+        if (regexType === 'age') {
+          output = checkAge(inputText);
+        } else if (regexType === 'name') {
+          output = checkName(inputText);
+        } else if (regexType === 'address') {
+          output = checkAddress(inputText);
+        }
+
+        return output;
+      }
+
+      function checkAge(incoming) {
+        return /[0-9]+/.test(incoming);
+      }
+      function checkName(incoming) {
+        return /\w+ \w+/.test(incoming);
+      }
+      function checkAddress(incoming) {
+        return /\d{3,5} \w+/.test(incoming);
+      }
+    </script>
+  </head>
+  <body>
+
+    <input type="textbox" id="theCheckedText" />
+    <input type="radio" name="regSelect" value="age" />
+    <input type="radio" name="regSelect" value="name" />
+    <input type="radio" name="regSelect" value="address" />
+    <button onclick="testInput()">test</button>
+    <div id="result">
+
+    </div>
+  </body>
+</html>

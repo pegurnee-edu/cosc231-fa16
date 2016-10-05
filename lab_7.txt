@@ -1,0 +1,8 @@
+lab 7
+create webpage that allows the user to enter some text, then check if it matches one of the provided formats. There should exist functions to test each of the formats:
+
+- isJavaIdentifier(testString)
+- isPhone(testString)
+- isEmail(testString)
+- isDate(testString)
+- isEid(testString)
