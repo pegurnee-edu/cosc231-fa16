@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>october 5th</title>
     <style>
-      id {
+      #result {
         height: 50px;
         width: 20%;
       }
@@ -12,7 +12,8 @@
     <script type="text/javascript">
       function testInput() {
         var regexType = document.querySelector('input[name="regSelect"]:checked').value,
-            inputText = document.getElementById('theCheckedText').value;
+            inputText = document.getElementById('theCheckedText').value,
+            resultDiv = document.getElementById('result');
 
         var output;
 
@@ -23,6 +24,8 @@
         } else if (regexType === 'address') {
           output = checkAddress(inputText);
         }
+
+        resultDiv.style.backgroundColor = output ? 'green' : 'red';
 
         return output;
       }
@@ -40,10 +43,10 @@
   </head>
   <body>
 
-    <input type="textbox" id="theCheckedText" />
-    <input type="radio" name="regSelect" value="age" />
-    <input type="radio" name="regSelect" value="name" />
-    <input type="radio" name="regSelect" value="address" />
+    <input type="textbox" id="theCheckedText" /><br />
+    <label>Age: <input type="radio" name="regSelect" value="age" /></label><br />
+    <label>Name: <input type="radio" name="regSelect" value="name" /></label><br />
+    <label>Address: <input type="radio" name="regSelect" value="address" /></label><br />
     <button onclick="testInput()">test</button>
     <div id="result">
 
