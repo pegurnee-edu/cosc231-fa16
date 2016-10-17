@@ -1,0 +1,10 @@
+lab 7
+create a high-low guessing game.
+when the user enters a value that is too low, display - too low
+when the user enters a value that is too high, display- too high
+keeps track of all user guesses and responses
+lets the user know when they are correct
+
+no ACCIDENTAL global variables
+a guess method that takes a numerical guess
+a way to reset the game so they can play the game without reloading the page
