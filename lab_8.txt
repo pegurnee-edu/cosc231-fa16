@@ -1,4 +1,4 @@
-lab 7
+lab 8
 create a high-low guessing game.
 when the user enters a value that is too low, display - too low
 when the user enters a value that is too high, display- too high
