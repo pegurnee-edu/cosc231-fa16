@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>October 17</title>
+    <script type="text/javascript">
+      function runCode() {
+        var code = document.querySelector('input[type=textbox]').value;
+        eval(code);
+      }
+
+      function getObj() {
+        var obj, fun, obj2, x;
+
+        obj = {
+          firstName: 'Eddie',
+          shoes: 'crocs',
+          letsHave: fun
+        };
+
+        fun = function() {
+          var x, y;
+          x = 117;
+          //console.log(x);
+          y = x + 10;
+
+          obj.letsHave = 4;
+
+          return 'a';
+        };
+
+
+        obj2 = Object.create(obj);
+
+        console.log(fun());
+
+        alert(obj2.letsHave);
+
+        for (x in obj2) {
+           //alert(obj2[x]);
+        }
+
+        //obj2.letsHave()
+
+        return obj;
+      };
+
+      var myObj = getObj();
+
+      myObj.firstName; //Eddie
+      alert(myObj.letsHave);
+    </script>
+  </head>
+  <body>
+    <div class="">
+      <input type="textbox" name="input" value="" />
+      <button type="button" name="button" onclick="runCode();">Run</button>
+    </div>
+
+  </body>
+</html>
