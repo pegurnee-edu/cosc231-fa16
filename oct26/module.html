@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Play with Modules</title>
+    <script type="text/javascript" src="validator.js"> </script>
+
+    <script type="text/javascript">
+      //sit in silence confused
+      var val = validatorFactory();
+      var hello;
+
+      function checkVal() {
+        var inputVal = document.querySelector('input[name=theinput]').value;
+
+        var color;
+        if (val.isEid(inputVal)) {
+          color = "green";
+        } else {
+          color = "red";
+        }
+
+        document.body.style.backgroundColor = color;
+      }
+
+      hello = function() {
+        return 4;
+      }
+
+      hello = function(name, age, politicalAffiation, gender) {
+        name = name || 'eddie';
+
+
+        return name + 5;
+      }
+
+      function setCookie(name, value, days = 0) {
+        if (typeof days != 'number'){
+          throw "End of days";
+        }
+
+      }
+
+     hello();    //undefined5
+     hello(4);   //9
+     hello(4, 6) //9
+    </script>
+  </head>
+  <body>
+    <input type="textbox" name="theinput" value="" />
+    <button type="button" name="button" onclick="checkVal();">Check Eid</button>
+  </body>
+</html>
