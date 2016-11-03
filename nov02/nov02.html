@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>nov2</title>
+    <style media="screen">
+      img {
+        height: 200px;
+        position: absolute;
+        left: 0;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var ragman;
+    var makeBlue = function() {
+      makeColor("blue");
+    }
+    var makeGreen = function() {
+      makeColor("green");
+    }
+    var makePink = function() {
+      makeColor('pink');
+    }
+    var makeColor = function(color) {
+      document.body.style.backgroundColor = color;
+    }
+
+    var isGreen = false;
+    var swap = function() {
+      if (isGreen) {
+        makeBlue();
+      } else {
+        makeGreen();
+      }
+      isGreen = !isGreen;
+    }
+    var swapPointer;
+    function startSwapping() {
+      if (!swapPointer) {
+        swapPointer = setInterval(swap, 500);
+      }
+    }
+    var movement = 0;
+    function run() {
+        movement += 2;
+        ragman.style.left = movement + 'px';
+
+    }
+
+    var runningPtrs = [];
+    function startRunning() {
+        if (!ragman.isRunning) {
+          runningPtrs.push(setInterval(run, 100));
+          ragman.isRunning = true;
+        }
+    }
+
+    function faster() {
+      runningPtrs.push(setInterval(run, 100));
+    }
+    function stop() {
+      var ptr;
+      for(; ptr = runningPtrs.pop(); ) {
+        clearInterval(ptr);
+      }
+    }
+    </script>
+    <button onclick="setTimeout(makeBlue, 1000);setTimeout(makeGreen, 999);">make all</button>
+    <button onclick="setTimeout(makeBlue, 1000);">make blue</button>
+    <button onclick="setTimeout(makePink, 500);">make pink</button>
+    <button onclick="startSwapping()">swap</button>
+    <button onclick="clearInterval(swapPointer); swapPointer = false;">stop swapping</button>
+    <button onclick="alert(hi)">hi</button>
+    <img src="http://vignette1.wikia.nocookie.net/injusticegodsamongus/images/0/0b/Ragman_Injustice_Y3.jpg/revision/latest?cb=20141119194338" />
+    <button onclick="startRunning()">run</button>
+    <button onclick="faster()">faster</button>
+    <button onclick="stop()">stop</button>
+    <script type="text/javascript">
+
+      ragman = document.querySelector('img');
+    </script>
+  </body>
+</html>
