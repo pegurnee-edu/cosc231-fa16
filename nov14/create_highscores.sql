@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS highscores
+( id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT
+
+, game VARCHAR(32)
+, user VARCHAR(64)
+, score INT(5)
+
+, PRIMARY KEY (id)
+);
