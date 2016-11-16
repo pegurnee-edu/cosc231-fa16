@@ -1,0 +1,18 @@
+lab 11
+
+Create a form with a username and password, along with 'Login' and 'Register' buttons.
+
+When the user clicks 'Login' for the first time, the page uses AJAX to load a file of valid usernames and checks if the username and password exist. Give a user response of either success or failiure.
+
+When the user clicks 'Register', the username and password are validated against the following rules:
+    -usernames must
+        start with a '$' (dollar sign character, no quotes)
+        have no capital letters
+        have no numbers in the first four characters
+    -passwords must
+        not be password
+        be longer than 15 characters OR
+            be at least 8 characters
+            use at least one of the following: &%$^#@=
+            have at least 2 numbers that are not at either the beginning or the end NOR can they be next to each other within the password
+            have at least 2 uppercase and 2 lowercase characters
