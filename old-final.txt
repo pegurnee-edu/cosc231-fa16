@@ -1,0 +1,17 @@
+is passed a URI, uses a Regular Expression that retrieves the protocol and host domain returns them in the form of "<protocol>, <host domain>"
+is passed some valid Java, JavaScript, or C source code, uses a Regular Expression that matches comments ('// words' or '/* more words */') and returns all of the commented text
+is passed dates that use various separators (i.e. 'MM/DD/YYYY' or 'MM-DD-YYYY'), use a Regular Expression to grab the data and return the date in one format
+
+
+What is the difference between == and === in JavaScript?
+Give an example of how to parse a number from a string in JavaScript.
+Discuss the differences between the three types of `for` loops usable in JavaScript.
+Name and give examples of four different types of variables in JavaScript.
+JavaScript functions are first class objects. What does that mean?
+What is variable hoisting in JavaScript?
+Discuss differences between LocalStorage and Cookies, specifically in regards to possible connection to the server.
+Give an example of how modular code can be written in JavaScript and explain why it has value.
+What is AJAX and give an example of its use.
+What is JSON and why is it overwhelmingly useful?
+Explain three problems that jQuery offers solutions.
+What makes jQuery a library and not a framework?
